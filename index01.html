@@ -23,11 +23,7 @@
       id="scene"
     >
       <a-assets>
-        <a-asset-item
-          id="bowser"
-          src="ai_eye.glb"
-        >
-        </a-asset-item>
+         <img id="bowser" src="image.png">
       </a-assets>
 
       <a-marker
@@ -38,15 +34,8 @@
         cursor="fuse: false; rayOrigin: mouse;"
         id="markerA"
       >
-        <a-entity
-          id="bowser-model"
-          gltf-model="#bowser"
-          position="0 0 0"
-          scale="10 10 10"
-          class="clickable"
-          gesture-handler
-        >
-        </a-entity>
+
+           <a-image src="#bowser" scale="4 4 4"></a-image>
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
